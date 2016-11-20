@@ -15,7 +15,7 @@ function addTodo() {
     var data = "";
     for (var i = 0; i < array.length; i++) {
         data += "<li>" + array[i] + "</li>";
-        todoList.innerHTML = links;
+        todoList.innerHTML = data;
     }
     data = "";
     document.getElementById("input").value = ""
@@ -23,6 +23,6 @@ function addTodo() {
 }
 
 function removed() {
-    document.getElementById("todo_list").innerHTML = "";
+  //  document.getElementById("todo_list").innerHTML = "";
     array = []
 }
